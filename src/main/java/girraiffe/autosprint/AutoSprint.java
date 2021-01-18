@@ -1,8 +1,9 @@
 package girraiffe.autosprint;
 
-import girraiffe.autosprint.events.OnClientTickHoldSprint;
+import girraiffe.autosprint.events.OnKeyPress;
 import girraiffe.autosprint.events.OnWorldLoad;
 import girraiffe.autosprint.events.OnWorldUnload;
+import girraiffe.autosprint.keybinds.Keybindings;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -14,9 +15,10 @@ public class AutoSprint {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-         MinecraftForge.EVENT_BUS.register(new OnClientTickHoldSprint());
-         MinecraftForge.EVENT_BUS.register((new OnWorldLoad()));
-         MinecraftForge.EVENT_BUS.register(new OnWorldUnload());
+        Keybindings.register();
+        MinecraftForge.EVENT_BUS.register(new OnWorldUnload());
+        MinecraftForge.EVENT_BUS.register(new OnWorldLoad());
+        MinecraftForge.EVENT_BUS.register(new OnKeyPress());
     }
 
     @Mod.EventHandler
@@ -25,6 +27,7 @@ public class AutoSprint {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+
     }
 
 }

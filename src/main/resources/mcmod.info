@@ -2,7 +2,7 @@
 {
   "modid": "AutoSprint",
   "name": "Auto Sprint",
-  "description": "Dummy lightwheight autosprint mod.",
+  "description": "Dummy lightweight autosprint mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
