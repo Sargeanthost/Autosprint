@@ -1,0 +1,16 @@
+[
+{
+  "modid": "AutoSprint",
+  "name": "Auto Sprint",
+  "description": "Dummy lightwheight autosprint mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["girraiffe"],
+  "credits": "Forge",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
